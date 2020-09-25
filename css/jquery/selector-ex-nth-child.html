@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        table {
+            border: 1px solid black;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            border:1px solid black           
+        }
+    </style>
+</head>
+<body>
+    <!-- table>tr*5>td*6>lorem1 -->
+    <table>
+        <tr>
+            <td>Lorem.</td>
+            <td>A?</td>
+            <td>Qui?</td>
+            <td>Voluptate.</td>
+            <td>Veritatis?</td>
+            <td>Architecto?</td>
+        </tr>
+        <tr>
+            <td>Magni.</td>
+            <td>Quas.</td>
+            <td>Possimus.</td>
+            <td>Provident!</td>
+            <td>Et!</td>
+            <td>Corporis?</td>
+        </tr>
+        <tr>
+            <td>Veniam?</td>
+            <td>Perferendis.</td>
+            <td>Consectetur.</td>
+            <td>Itaque.</td>
+            <td>Cumque.</td>
+            <td>Eaque.</td>
+        </tr>
+        <tr>
+            <td>Porro!</td>
+            <td>Eum?</td>
+            <td>Obcaecati.</td>
+            <td>Provident.</td>
+            <td>Asperiores.</td>
+            <td>Distinctio.</td>
+        </tr>
+        <tr>
+            <td>Asperiores?</td>
+            <td>Praesentium!</td>
+            <td>Nesciunt.</td>
+            <td>Doloribus.</td>
+            <td>Cum?</td>
+            <td>Explicabo?</td>
+        </tr>
+    </table>
+    <script>
+        // $("tr:odd").hide();
+        $("tr:nth-child(2n+1)").hide();       // 누군가의 자손 (홀수)를 사라지게한다.
+    </script>
+</body>
+</html>

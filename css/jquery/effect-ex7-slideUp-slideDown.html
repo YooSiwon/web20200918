@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .main {
+            width: 100px;
+            height: 70px;
+            line-height: 70px;
+            font-weight: bold;
+            box-sizing: border-box;
+            color: black;
+            background-color: pink;
+            position: relative;
+            text-align: center;
+        }
+        .sub {
+            position: absolute;
+            width: 100px;
+            padding: 15px;
+            box-sizing: border-box;
+            border: 5px solid black;
+            left: 0px;
+            top: 70px;
+            display: none;
+            color: black;   
+            background-color: gold;         
+        }
+        .sub-item1 {
+            background-color: green;
+        }
+        .sub-item2 {
+            background-color: yellow;
+        }
+        .sub-item3 {
+            background-color: red;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $(".main").click(function() {
+                $(".sub").slideToggle("fast");
+            });
+        });
+       
+    </script>
+</head>
+<body>
+    <div class="main">
+        MAIN <i class="fas fa-caret"></i>
+        <div class="sub">
+            <div class="sub-item1">연혁</div>
+            <div class="sub-item2">한마디</div>
+            <div class="sub-item3">공지</div>
+        </div>
+    </div>
+
+</body>
+</html>
