@@ -7,16 +7,14 @@
     </style>
     <script>
         $(document).ready(function() {
-            $("#btn1").click(function() {
-                $("h1").toggle(3000, function() {
-                    console.log("효과가 끝난 후 실행");
-                });
-            });
+            $("#div1").remove();      //element 전체가 날아감
+            $("#div2").empty();      //콘텐트 삭제
         });
     </script>
 </head>
 <body>
-    <button id="btn1">toggle</button>
-    <h1>Lorem, ipsum dolor.</h1>
+    <!-- #div$*2>lorem5 -->
+    <div id="div1">Lorem ipsum dolor sit amet.</div>
+    <div id="div2">Nobis fugiat ea odio nemo.</div>
 </body>
-</html> 
+</html>

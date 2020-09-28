@@ -8,15 +8,19 @@
     <script>
         $(document).ready(function() {
             $("#btn1").click(function() {
-                $("h1").toggle(3000, function() {
-                    console.log("효과가 끝난 후 실행");
-                });
+                var txt = $("#input1").val();
+                var newLI = $("<li />");
+                newLI.text(txt);
+                $("#result").append(newLI);
             });
         });
     </script>
 </head>
 <body>
-    <button id="btn1">toggle</button>
-    <h1>Lorem, ipsum dolor.</h1>
+    <input type="text" id="input1">
+    <button id="btn1"><i class="fas fa-plus"></i></button>
+
+    <ul id="result">        
+    </ul>
 </body>
-</html> 
+</html>
